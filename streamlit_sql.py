@@ -4,7 +4,7 @@ from streamlit_modal import Modal
 from sqldemo import *
 #------------------------------------------
 
-conn, cursor = db_connection('visual_interface_chat\sakila_master.db')
+conn, cursor = db_connection('sakila_master.db')
 
 modal = Modal('Database schema', key="image_modal", max_width=700)
 
@@ -27,7 +27,7 @@ def main():
         # Check if the modal is open and display the content inside it
         if modal.is_open():
             with modal.container():
-                st.image(r'visual_interface_chat\data\sakila_db_schema.png', caption='Database schema')
+                st.image(r'data/sakila_db_schema.png', caption='Database schema')
 
 
     if "messages" not in st.session_state:
