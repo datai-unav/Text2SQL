@@ -2,3 +2,4 @@ python-dotenv
 openai
 textwrap3
 streamlit
+streamlit-modal
